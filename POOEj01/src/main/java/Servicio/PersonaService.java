@@ -18,7 +18,7 @@ public class PersonaService {
         Persona personaCompleta = new Persona();
         
         // Pedimos al usuario que se ingrese la información
-        System.out.println("Ingresa el nombre de la persona");
+        System.out.println("Ingresa el nombre de la persona: ");
         
         // Con el objeto, invocamos al método set y recibimos
         // la información con Scanner
@@ -26,5 +26,11 @@ public class PersonaService {
         
         // Ya retornamos el objeto con sus atributos llenados.
         return personaCompleta;   
+    }
+    
+    public void mostrarConGet(Persona pers){
+        System.out.println("Nombre desde Service con get: "+pers.getNombre());
+        System.out.println("Edad desde Service con get: "+pers.getEdad());
+        System.out.println("Sexo desde Service con get: "+pers.getSexo());
     }
 }

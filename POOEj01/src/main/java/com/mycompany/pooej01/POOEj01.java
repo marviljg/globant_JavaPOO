@@ -27,6 +27,7 @@ public class POOEj01 {
         System.out.println("Con toString(): "+segundaPersona.toString());
         
         // Se crea una tercera persona, pero desde la clase Service
+        // ES SOLO UNA CLASE INTERMEDIA ENTRE "Persona" Y LA INFO DESDE MAIN
         PersonaService persServicio = new PersonaService();
         
         // Alojamos el retorno del método en un objeto tipo
@@ -34,5 +35,7 @@ public class POOEj01 {
         Persona terceraPersona = persServicio.crearPersona();
         System.out.println("Nombre por get dado en Service");
         System.out.println("Nombre: "+terceraPersona.getNombre());
+        
+        persServicio.mostrarConGet(terceraPersona);
     }
 }
