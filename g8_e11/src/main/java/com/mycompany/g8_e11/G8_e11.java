@@ -28,7 +28,6 @@ public class G8_e11 {
         System.out.println("Ingresa el día: dd");
         //int dia = entrada.nextInt();
         int dia=16;
-        
         Date fechaIngresada = new Date(anio-1900, mes, dia);
         System.out.println("Fecha ingresada: "+fechaIngresada);
         Date fechaActual = new Date();
